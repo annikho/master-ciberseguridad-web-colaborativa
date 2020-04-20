@@ -19,6 +19,10 @@
                 alert("Name must be filled out");
                 return false;
             }
+            if (!username.toString().includes("@" && ".")){
+            	alert("Hay un error en las credenciales");
+            	return false;
+		    }
 
             var password = document.forms["reg-form"]["password"].value;
             if (password == "") {
